@@ -1,0 +1,201 @@
+body {
+  box-sizing:border-box;
+  /*  Problem 1: I am not been able to change the font family */
+  font-family:Helvetica, sans-serif;
+  background-color:lightblue;
+}
+
+header{
+  background-color: rgb(155, 148, 148);
+  width:90%;
+  height:150px;
+  margin: 0 auto;     /*alinea header al centro por ser block*/
+  text-align:center;  /*alinea contenido de header al centro si                         este esta como inline*/
+  background-image: url("http://intro-webdesign.com/CSS/assignment-2/images/flywheel.jpg");
+  background-size: cover;
+  background-position: center top; 
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+h1{
+  color:white;
+  text-shadow: 2px 2px black;
+  padding-top:15px;
+}
+
+nav {
+  display:inline;
+  margin:0 auto;
+  padding:20px;
+  }
+
+nav a{
+   background-color: rgba(100, 195, 159, 0.9);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-shadow: 1.5px 1.5px white;
+    display:inline-block;
+    font-weight: bold;
+    text-decoration:none;
+    width:10%;
+    padding:10px;
+    margin:40px;
+    margin-top:0px;
+    border-color:black;
+    border-radius:5px; 
+    border-width: medium;
+    box-shadow: 5px 5px 5px black;
+}
+
+/* nav a:link {
+  color: #FF0000;
+} */
+
+/* nav a:link {
+  color: #00ff73;
+  color: #359460;
+  rgba(100, 195, 159, 0.9)
+} */
+
+/* visited link */
+nav a:visited {
+  color: #111311;
+}
+
+nav a:hover {
+  background-color: white;
+}
+
+/* Problem 2: The link is not been activated  */
+nav a:active {
+  background-color: white;
+} 
+
+main{
+  background-color:gray;
+  width:90%;
+  height:800px;
+  margin-top:120px;
+  margin: 0 auto;
+  margin-top:10px;
+  position:relative;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+h1 {
+  text-align:center;
+  font-size:30px;
+}
+
+nav {
+  display:inline;
+  margin:0 auto;
+  padding:10px;
+  }
+
+
+aside {
+  float:left;
+  width:20%;
+  height:250px;
+  margin-left:2%;
+  margin-top:2%;
+  
+}
+
+aside img{
+  display:block;
+  width:100%;
+  height:200px;
+  margin:0 auto; /*alinea al centro porque son block*/
+  margin-top:20px;
+  background-size: cover;
+  background-position: center top;
+  border-radius:10px;  
+  box-shadow: 7px 7px 5px black;
+  /* Problem 5: The link element is been applying to the section side  */
+  }
+
+section {
+  width:75%;
+  height:650px;
+  float:right;
+  margin-right:1%;
+  margin-top:2%;
+  
+}
+
+h2 {
+  text-align:left;
+  font-size:30px;
+  color:rgba(255,255,255, 0.9);
+  padding-left:15px;
+  text-shadow: 2px 2px black;
+}
+
+p{
+  padding:15px;
+}
+
+p, li{
+  text-decoration:none;
+  font-size:20px;
+  line-height: 50px;
+  color:black;
+  text-align:left;
+}
+
+table, td, th {
+ 
+ padding:8px;
+}
+
+table {
+   font-family: "Times New Roman", Times, serif;
+  width: 60%;
+  border-collapse: collapse;
+  margin-left:20%;
+  color:black;
+}
+
+td{
+  border: 1px solid white;
+}
+
+
+th{
+  font-family: Helvetica, sans-serif;
+  color:white;
+  font-weight:bold;
+  background-image: linear-gradient(#359460,#338558, #359460);
+  border: 1px solid white;
+}
+
+/* Problem 3: I can not set the border radius or the th element */
+table tr:nth-child(1) {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+} 
+
+
+td{
+  font-family: sans-serif;
+  text-align:left;
+  color:rgba(1, 12, 8, 0.7);
+}
+
+td:nth-child(2) {
+  text-align:center;
+} 
+td:nth-child(3) {
+  text-align:center;
+}
+
+tr:hover {
+  background-color: white;
+  color:black;
+  /* Problem 4: Border is not applying on hover */
+  border:1px solid black;
+}
